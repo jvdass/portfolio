@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-grid: #e5e5e5;
+  }
+  .dark {
+    --bg-grid: #262626;
+  }
+}
+
+body {
+  background-color: #fbfaf7;
+  background-image:
+    linear-gradient(var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--bg-grid) 1px, transparent 1px);
+  background-size: 25% 100%;
+}
+
+.dark body {
+  background-color: #011f36;
+  color: #c6c5c5;
+  
+}
+.dark body a {
+  color: rgb(158, 158, 146);
+}
+.dark body h1 {
+  color: #fff;
+}
+.dark body h2 {
+    color: #fff;
+}
