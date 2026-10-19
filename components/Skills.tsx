@@ -1,3 +1,5 @@
+import FadeIn from "./FadeIn";
+
 export default function Skills() {
   const skillCategories = [
     {
@@ -10,24 +12,25 @@ export default function Skills() {
     },
     {
       category: "OUTILS & ENVIRONNEMENT",
-      skills: ["Git / GitHub", "Vercel", "VS Code", "Linux"],
+      skills: ["Git / GitHub", "Vercel", "VS Code", "Linux", "Bash"],
     },
     {
      category: "RESEAUX",
-     skills: ["Cisco Packet Tracer", "Bash"],
+     skills: ["Cisco Packet Tracer"],
     }
   ];
 
   return (
     <section id="competences" className="max-w-6xl mx-auto px-6 py-20 border-t border-neutral-300 dark:border-neutral-800">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div>
+        <FadeIn>
           <p className="font-mono text-xs uppercase tracking-widest text-neutral-500">COMPÉTENCES</p>
           <h2 className="text-3xl font-bold mt-2 tracking-tight">Savoir-faire technique.</h2>
-        </div>
+        </FadeIn>
 
         <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
           {skillCategories.map((item, idx) => (
+            <FadeIn key={idx} delay={idx * 150}>
             <div key={idx} className="border border-neutral-300 dark:border-neutral-800 p-6 bg-[#F8F7F4] dark:bg-neutral-900/60">
               <span className="font-mono text-xs uppercase tracking-wider text-neutral-400 block mb-4">
                 {item.category}
@@ -41,6 +44,7 @@ export default function Skills() {
                 ))}
               </ul>
             </div>
+            </FadeIn>
           ))}
         </div>
       </div>

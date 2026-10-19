@@ -5,7 +5,7 @@ export default function About() {
         <div>
           <p className="font-mono text-xs uppercase tracking-widest text-neutral-500">À PROPOS</p>
         </div>
-        <div className="md:col-span-2 space-y-6 text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed">
+        <div id="apropos" className="md:col-span-2 space-y-6 text-lg text-neutral-700 dark:text-neutral-200 leading-relaxed">
           <p>
             Étudiant en informatique à l'université Lumière Lyon 2, je suis passionné par la science des données, le développement web et la cybersécurité. 
 

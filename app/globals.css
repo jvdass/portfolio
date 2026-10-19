@@ -17,10 +17,18 @@ body {
   background-size: 25% 100%;
 }
 
+.dark #haut-de-page, #haut-de-page a {
+  color: #393939;
+}
+
 .dark body {
-  background-color: #011f36;
+  background-color: #023f6e;
   color: #c6c5c5;
   
+}
+
+.dark body p {
+  color: #fbfaf7;
 }
 .dark body a {
   color: rgb(158, 158, 146);
@@ -31,3 +39,26 @@ body {
 .dark body h2 {
     color: #fff;
 }
+
+.dark #contact h2 {
+  color: #262626;
+}
+
+.dark #contact a {
+  color: #262626;
+}
+.dark #contact p {
+  color: #585757;
+}
+
+.dark #a-propos p {
+  color: #262626;
+}
+
+.dark #description-projet, #techno {
+  color: #262626;
+}
+
+
+
+

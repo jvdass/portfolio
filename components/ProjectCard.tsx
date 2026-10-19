@@ -2,16 +2,16 @@ import { Project } from "@/data/projects";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="border border-neutral-300 dark:border-neutral-800 bg-[#F8F7F4] dark:bg-neutral-900/60 p-8 flex flex-col justify-between hover:border-black dark:hover:border-white transition-all">
+    <div className="border border-neutral-300 dark:border-neutral-800 bg-[#F8F7F4] dark:bg-neutral-900 p-8 flex flex-col justify-between hover:border-black dark:hover:border-white transition-all h-full">
       <div>
         <span className="font-mono text-[11px] uppercase tracking-wider px-2.5 py-1 bg-neutral-200/80 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300 rounded-sm inline-block mb-6">
           {project.category}
         </span>
-        <h3 className="text-2xl font-bold mb-3 tracking-tight">{project.title}</h3>
-        <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed mb-8">
+        <h3 className="text-2xl font-bold mb-3 tracking-tight text-neutral-900 dark:text-black">{project.title}</h3>
+        <p id="description-projet" className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed mb-8">
           {project.description}
         </p>
-        <p className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed mb-8">
+        <p id="techno" className="text-neutral-600 dark:text-neutral-400 text-sm leading-relaxed mb-8">
             <strong>Technologies : </strong> {project.competences}
         </p>
       </div>
